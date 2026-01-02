@@ -2,127 +2,46 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dubai World | دبي وورلد للتمويل</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <title>عالم ألعاب الأطفال</title>
     <style>
-        body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
-
-        .pop-effect {
-            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        body {
+            background-color: #FFEB3B; /* لون أصفر مبهج */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
         }
-        .pop-effect:hover {
-            transform: scale(1.05);
+        h1 { color: #E91E63; font-size: 50px; }
+        .game-card {
+            background: white;
+            border-radius: 20px;
+            display: inline-block;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 10px 0 #FF9800;
+            cursor: pointer;
+            transition: 0.3s;
         }
-
-        .push-effect {
-            transition: all 0.1s ease;
+        .game-card:hover { transform: scale(1.1); }
+        .btn {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 20px;
         }
-        .push-effect:active {
-            transform: scale(0.92);
-        }
-
-        .bg-navy { background-color: #0f172a; }
-        .text-gold { color: #d4af37; }
-        .gradient-gold { background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-    <nav class="bg-navy text-white sticky top-0 z-50 shadow-2xl border-b border-yellow-600/20">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2 pop-effect cursor-pointer">
-                <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-navy font-black text-xl shadow-lg">DW</div>
-                <h1 class="text-2xl font-black italic tracking-wider">DUBAI <span class="text-gold">WORLD</span></h1>
-            </div>
-
-            <div class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest">
-                <a href="#about" class="hover:text-gold transition">عن الشركة</a>
-                <a href="#conditions" class="hover:text-gold transition">الشروط</a>
-            </div>
-
-            <a href="https://forms.gle/cxP27mnV8NysZmaH9" target="_blank"
-               class="gradient-gold text-slate-900 px-6 py-2 rounded-full font-black text-sm push-effect shadow-lg">
-                تقديم طلب
-            </a>
-        </div>
-    </nav>
-
-    <section class="bg-navy py-24 text-white text-center relative overflow-hidden">
-        <div class="container mx-auto px-6 relative z-10">
-            <h2 class="text-5xl md:text-7xl font-black mb-8 leading-tight pop-effect uppercase">DUBAI <span class="text-gold font-serif">WORLD</span></h2>
-            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12">الجيل الجديد من حلول التمويل للموظفين في محافظة البصرة. خبرة رائدة برؤية محلية.</p>
-
-            <div class="flex flex-col md:flex-row justify-center gap-6">
-                <a href="https://forms.gle/cxP27mnV8NysZmaH9" target="_blank"
-                   class="gradient-gold text-slate-900 px-16 py-5 rounded-2xl font-black text-2xl shadow-2xl push-effect">
-                    سجل طلبك الآن
-                </a>
-                <a href="#about" class="border-2 border-white/20 px-16 py-5 rounded-2xl font-black text-2xl hover:bg-white hover:text-navy transition push-effect">
-                    اكتشف المزيد
-                </a>
-            </div>
-        </div>
-        <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
-    </section>
-
-    <section id="about" class="py-24 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="bg-gray-50 rounded-[3rem] p-12 border border-gray-100 flex flex-col md:flex-row items-center gap-12 pop-effect shadow-sm">
-                <div class="md:w-1/2">
-                    <h3 class="text-3xl font-black text-navy mb-6">لماذا DUBAI WORLD؟</h3>
-                    <p class="text-gray-600 leading-relaxed text-lg italic">
-                        تعتبر شركة **Dubai World** رائدة في تقديم التسهيلات المالية الفورية. نحن متخصصون في ربط موظفي الدولة في البصرة بأفضل الفرص التمويلية، مع الالتزام التام بالسرعة والسرية والموثوقية.
-                    </p>
-                    <div class="mt-6 flex gap-4 font-bold text-navy">
-                        <span>✓ أمان</span>
-                        <span>✓ سرعة</span>
-                        <span>✓ شفافية</span>
-                    </div>
-                </div>
-                <div class="md:w-1/2 grid grid-cols-2 gap-4 text-center">
-                    <div class="bg-navy p-8 rounded-3xl text-white push-effect">
-                        <span class="block text-4xl font-black text-gold mb-2">+950</span>
-                        <span class="text-xs uppercase tracking-widest">معاملة ناجحة</span>
-                    </div>
-                    <div class="bg-white p-8 rounded-3xl border border-gray-200 push-effect">
-                        <span class="block text-4xl font-black text-navy mb-2">DW</span>
-                        <span class="text-xs text-gray-400 uppercase tracking-widest">رمز الثقة</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="conditions" class="py-20 bg-navy text-white text-center">
-        <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-black mb-10 text-gold uppercase tracking-widest underline underline-offset-8">شروط Dubai World</h3>
-            <div class="flex flex-wrap justify-center gap-6">
-                <div class="px-10 py-5 bg-white/5 rounded-2xl border border-white/10 pop-effect font-bold">عراقي 🇮🇶</div>
-                <div class="px-10 py-5 bg-white/5 rounded-2xl border border-white/10 pop-effect font-bold">موظف (بصرة) 💼</div>
-                <div class="px-10 py-5 bg-white/5 rounded-2xl border border-white/10 pop-effect font-bold">توطين راتب 🏦</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <div class="max-w-4xl mx-auto bg-gray-900 p-16 rounded-[3rem] shadow-2xl relative overflow-hidden">
-                <h3 class="text-4xl font-black text-white mb-8 uppercase">Dubai World <span class="text-gold">Application</span></h3>
-                <p class="text-gray-400 mb-12 font-bold tracking-[0.2em] text-xs uppercase">المباشرة بملء الاستمارة تعني موافقتك على شروط التمويل</p>
-                <a href="https://forms.gle/cxP27mnV8NysZmaH9" target="_blank"
-                   class="gradient-gold text-navy px-16 py-6 rounded-2xl font-black text-3xl shadow-2xl push-effect inline-block">
-                    انقر هنا للتقديم الإلكتروني
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-navy py-12 text-center border-t border-white/5">
-        <div class="text-white font-black text-2xl italic tracking-tighter mb-4">DUBAI <span class="text-gold">WORLD</span></div>
-        <p class="text-gray-600 text-[10px] tracking-[0.5em] uppercase">Basra Branch &copy; 2026</p>
-    </footer>
-
+<body>
+    <h1>مرحباً بك في عالم المرح! 🎈</h1>
+    <div class="game-card">
+        <img src="https://via.placeholder.com/150" alt="لعبة التلوين">
+        <h3>لعبة التلوين 🎨</h3>
+    </div>
+    <div class="game-card">
+        <img src="https://via.placeholder.com/150" alt="لعبة الأرقام">
+        <h3>لعبة الأرقام 🔢</h3>
+    </div>
+    <br><br>
+    <a href="#" class="btn">اضغط هنا للبدء باللعب!</a>
 </body>
 </html>
